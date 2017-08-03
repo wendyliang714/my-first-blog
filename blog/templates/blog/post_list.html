@@ -1,22 +1,108 @@
 <html>
     <head>
-        <title>Django Girls blog</title>
+        <title>Wenxin's Blog</title>
     </head>
     <body>
         <div>
-            <h1><a href="">Django Girls Blog</a></h1>
+            <h1><a href="">Wenxin Liang's Blog</a></h1>
         </div>
+
+        {% for post in posts %}
+          <div>
+            <p>published: {{ post.published_date }}</p>
+            <h1><a href="">{{ post.title }}</a></h1>
+            <p>{{ post.text|linebreaksbr }}</p>
+          </div>
+        {% endfor %}
 
         <div>
             <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My first post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-        </div>
+            <h1><a href="">Global Cultures Club Cooks up Food, Fun and Friendship</a></h1>
+            <p>On Tuesday, October 11, Global Cultures Club had its first meeting in the cooking room.
+Club members made and tasted all kinds of Hispanic traditional food, such as empanadas and guacamole.
+Everyone had a great time and was reluctant to leave in the end.<br>
+<br>
+Ms. Ingram, the moderator of Global Cultures Club, had prepared the food materials and set up the tables as we came to the kitchen.
+As soon as everyone arrived, we started to make the guacamole, an avocado-based Mexican food. We mashed the avocados at first, then chopped cilantro, chills, onions, and tomatoes.
+After mixing them together and adding a splash of lime juice, it was the time to have a taste! We almost emptied the huge bowl of guacamole in a flash.<br>
+<br>
+After that, we began making the empanadas, which has become one of the most popular Hispanic food all over the world.
+Its name comes from the Spanish verb empanar, meaning to wrap or coat in bread. We wrapped cheese, ground beef, chicken, and spinach in pieces of wheat tortilla.
+Carefully putting them into pots filled with hot oil, we fried them deeply for a couple of minutes.
+Besides the regular empanadas, Ms. Ingram also taught us to make blueberry-empanadas and fried-plantains, which were not difficult to make but tasted great!
+For me, making Hispanic food was not only an interesting experience, but also a good opportunity to learn the cultures of the countries where the food was originated.
+Thanks a lot for Ms. Ingram’s organization of our first meeting; I believe that we all captured something more than fun! <br>
+<br>
+If you did not come to the meeting, you might have not heard about the Global Cultures Club yet.
+In fact, it is not exactly a new club, but originally the well-known International Club last year.
+We proposed to change its name to “global cultures”, so that every Trinity kid could have a chance to embrace cultures from all over the world.
+Grace Li, Binglun Jiang, Jackie Miller and I have become the executive board of this club. We bring with us our diverse background and our love for different cultures.
+We hope to plan more exciting events during the year, such as Halloween pumpkin carving, Spanish and Chinese paper cutting, and the World Language Festival. New members are always welcome to join the Global Cultures Club.
+So listen for the announcement of our next meeting and come by and have some fun.</p>
+          </div>
 
-        <div>
+          <div>
             <p>published: 14.06.2014, 12:14</p>
-            <h2><a href="">My second post</a></h2>
-            <p>Aenean eu leo quam. Pellentesque ornare sem lacinia quam venenatis vestibulum. Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut f.</p>
-        </div>
+      <h1><a href="https://www.youtube.com/watch?v=YQHsXMglC9A">My Favorite Song</a></h2>
+      <h2>Hello</h3>
+      <h3>Adele</h4>
+      <p>Hello, it's me<br>
+I was wondering if after all these years you'd like to meet<br>
+To go over everything<br>
+They say that time's supposed to heal ya<br>
+But I ain't done much healing<br>
+<br>
+Hello, can you hear me<br>
+I'm in California dreaming about who we used to be<br>
+When we were younger and free<br>
+I've forgotten how it felt before the world fell at our feet<br>
+<br>
+There's such a difference between us<br>
+And a million miles<br>
+<br>
+Hello from the other side<br>
+I must have called a thousand times<br>
+To tell you I'm sorry for everything that I've done<br>
+But when I call you never seem to be home<br>
+<br>
+Hello from the outside<br>
+At least I can say that I've tried<br>
+To tell you I'm sorry for breaking your heart<br>
+But it don't matter it clearly doesn't tear you apart anymore<br>
+<br>
+Hello, how are you?<br>
+It's so typical of me to talk about myself I'm sorry<br>
+I hope that you're well<br>
+Did you ever make it out of that town where nothing ever happened<br>
+<br>
+It's no secret that the both of us<br>
+Are running out of time<br>
+<br>
+So hello from the other side<br>
+I must have called a thousand times<br>
+To tell you I'm sorry for everything that I've done<br>
+But when I call you never seem to be home<br>
+Hello from the outside<br>
+At least I can say that I've tried<br>
+To tell you I'm sorry for breaking your heart<br>
+But it don't matter it clearly doesn't tear you apart anymore<br>
+<br>
+Ooooohh, anymore<br>
+Ooooohh, anymore<br>
+Ooooohh, anymore<br>
+Anymore<br>
+<br>
+Hello from the other side<br>
+I must have called a thousand times<br>
+To tell you I'm sorry for everything that I've done<br>
+But when I call you never seem to be home<br>
+Hello from the outside<br>
+At least I can say that I've tried<br>
+To tell you I'm sorry for breaking your heart<br>
+But it don't matter it clearly doesn't tear you apart anymore</p>
+          </div>
+
+
+
     </body>
 </html>
