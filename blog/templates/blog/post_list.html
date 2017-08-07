@@ -1,22 +1,34 @@
+{% load staticfiles %}
 <html>
     <head>
         <title>Wenxin's Blog</title>
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+        <link rel="stylesheet" href="{% static 'css/blog.css' %}">
+        <link href="//fonts.googleapis.com/css?family=Lobster&subset=latin,latin-ext" rel="stylesheet" type="text/css">
     </head>
     <body>
-        <div>
-            <h1><a href="">Wenxin Liang's Blog</a></h1>
+        <div class="page-header">
+            <h1><a href="">Welcome to Wenxin's Blog!</a></h1>
         </div>
 
-        {% for post in posts %}
-          <div>
-            <p>published: {{ post.published_date }}</p>
-            <h1><a href="">{{ post.title }}</a></h1>
-            <p>{{ post.text|linebreaksbr }}</p>
-          </div>
-        {% endfor %}
+        <div class="content container">
+    <div class="row">
+        <div class="col-md-8">
+            {% for post in posts %}
+                <div class="post">
+                    <div class="date">
+                        <p>published: {{ post.published_date }}</p>
+                    </div>
+                    <h1><a href="{% url 'post_detail' pk=post.pk %}">{{ post.title }}</a></h1>
+                    <p>{{ post.text|linebreaksbr }}</p>
+                </div>
+            {% endfor %}
+        </div>
 
-        <div>
-            <p>published: 14.06.2014, 12:14</p>
+
+        <div class="post">
+          <p>published: {{ post.published_date }}</p>
             <h1><a href="">Global Cultures Club Cooks up Food, Fun and Friendship</a></h1>
             <p>On Tuesday, October 11, Global Cultures Club had its first meeting in the cooking room.
 Club members made and tasted all kinds of Hispanic traditional food, such as empanadas and guacamole.
@@ -41,8 +53,7 @@ We hope to plan more exciting events during the year, such as Halloween pumpkin 
 So listen for the announcement of our next meeting and come by and have some fun.</p>
           </div>
 
-          <div>
-            <p>published: 14.06.2014, 12:14</p>
+          <div class='post'>
       <h1><a href="https://www.youtube.com/watch?v=YQHsXMglC9A">My Favorite Song</a></h2>
       <h2>Hello</h3>
       <h3>Adele</h4>
